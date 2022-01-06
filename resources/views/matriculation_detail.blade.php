@@ -28,14 +28,7 @@
 @endpush
 
 @section('content')
-    @php
-        if(!empty($oldData))
-            foreach ($oldData as $key => $value)
-                old($key) = $value;
-            endforeach
-        endif
-    @endphp
-
+ 
     <div class="container">
         <div class="col-md-10 mx-auto">
             <form action="{{ route('entrance.save') }}" method="POST">
